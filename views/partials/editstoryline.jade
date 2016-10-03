@@ -1,0 +1,35 @@
+.container
+  .jumbotron(style='margin-top:40px')
+    h1(style='font-size:58px')
+      | StoryLine Nai 
+      br
+      small Start typing your new story...
+    hr(style='border-color: white')
+    .row
+      .col-lg-12
+        .panel.panel-default
+          .panel-heading
+            h3.panel-title Write away ...
+          .panel-body
+            form(accept-charset='UTF-8' role='form')
+              fieldset
+                .form-group
+                  input(ng-model='form.title', name='title', placeholder='Enter title ...')
+                .form-group
+                  textarea.textarea(placeholder='Enter text ...' ng-model='form.text' style='width: 100%; height: 200px; font-size: 14px; line-height: 18px;')
+                button.btn.btn-lg.btn-success.btn-block(ng-click='editPost()') Publish
+.banner
+  .container
+    .row
+      .col-lg-6
+        h2 Connect with StoryLine Nai
+      .col-lg-6
+        ul.list-inline.banner-social-buttons
+          li
+            a.btn.btn-default.btn-lg(href='https://twitter.com/SBootstrap')
+              i.fa.fa-twitter.fa-fw
+              span.network-name Twitter
+          li
+            a.btn.btn-default.btn-lg(href='#')
+              i.fa.fa-facebook.fa-fw
+              span.network-name Facebook
